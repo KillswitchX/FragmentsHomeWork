@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_main_relative"
+        android:layout_toRightOf="@id/menu_linear"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contenido"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="100sp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#023"
+        android:gravity="fill_vertical"
+    android:id="@+id/menu_linear"
+        >
+        <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/navigation"
+            android:gravity="fill_vertical"
+            app:itemTextColor="#FFF"
+            app:menu="@menu/menu">
+
+        </android.support.design.widget.BottomNavigationView>
+    </LinearLayout>
+
+</RelativeLayout>
