@@ -46,7 +46,7 @@ public class MainActivity extends FragmentActivity implements FragmentA.Fragment
                         break;
                     case R.id.menubar_imagen:
                         Bundle bundle = new Bundle();
-                        bundle.putString(url,"Prueba");
+                        bundle.putString("url",url);
                         fragmentB = new FragmentB();
                         fragmentB.setArguments(bundle);
                         transaction.replace(R.id.contenido, fragmentB);
